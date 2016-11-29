@@ -1,0 +1,10 @@
+x=0:0.1:10;
+a=2;
+kp1=15;
+f=kp1*x.^a./(4^a+x.^a);
+plot(x,f);
+h=legend('MT Hill function');
+xlabel('MT');
+ylabel('Kp1*Mt/(Kmt^beta+MT^beta)');
+title_handle = title('This is the original title');
+set(title_handle,'String','b=2,Kp1=15,Kmt=4');
